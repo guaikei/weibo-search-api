@@ -1,6 +1,9 @@
 ---
+summary: 微博搜索API所需的公开数据（只读）：hot-cli 返回实时热搜榜，search-cli 按关键词返回微博/话题/用户，comment-cli 返回单条微博评论。输出结构化 JSON，按需取回、不自动更新。适用于按关键词接口化取回微博公开结果。触发词：微博搜索API、微博热搜、微博搜索、微博评论、weibo search-api。
+displayName: 微博搜索API｜热搜榜·关键词搜索·微博评论
+slug: weibo-search-api
 name: weibo-search-api
-description: 微博公开数据只读：热搜榜、关键词搜索、单条微博评论。触发：微博热搜、微博搜索、搜微博、微博评论、微博舆情、微博话题。抖音、小红书、快手、B站、公众号不要用本技能。weibo hot、weibo search、weibo comment。
+description: 微博搜索API只读：热搜榜、关键词搜索、单条微博评论。触发：微博搜索API、微博热搜、微博搜索、微博评论、weibo search-api。抖音、小红书、快手、B站、公众号不要用本技能。weibo hot、weibo search、weibo comment。
 license: MIT
 version: 1.0.0
 metadata:
@@ -24,9 +27,9 @@ metadata:
     - '这条微博的评论 → node "<SKILL_ROOT>/scripts/weibo/comment-cli.js" --url "https://weibo.com/detail/123" --limit 20'
 ---
 
-# 微博数据助手 | 微博热搜、搜索与评论 (Weibo)
+# 📱 微博搜索API｜热搜榜 · 关键词搜索 · 微博评论 (Weibo Search API)
 
-微博公开数据只读：热搜榜、关键词搜索、单条微博评论。输出结构化 JSON。
+微博搜索API公开数据只读：热搜榜（hot-cli）、关键词搜索（search-cli）、单条微博评论（comment-cli）。输出结构化 JSON，按需取回、不自动更新。适用于按关键词接口化取回微博公开结果。
 
 ## 1. 执行前置（每次必过）
 
